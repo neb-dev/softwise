@@ -19,10 +19,10 @@
       </div>
       <form id="userForm" onsubmit="return submitForm()">
         <label for="ssn">ssn (last 4) xxx-xx-</label>
-        <input type="number" name="ssn" id="ssn" placeholder="1333" onkeypress="validateForm()">
+        <input type="number" name="ssn" id="ssn" placeholder="1333" oninput="validateForm()">
         
         <label for="dob">date of birth</label>
-        <input type="date" name="dob" id="dob" placeholder="3/3/2003" onkeypress="validateForm()">
+        <input type="date" name="dob" id="dob" placeholder="3/3/2003" oninput="validateForm()">
         
         <input type="submit" name="submitButton" id="submitButton" value="SUBMIT">
       </form>
