@@ -17,14 +17,14 @@
       <div>
        <h1>Please enter the following information</h1>
       </div>
-      <form onsubmit="return validateForm();">
+      <form id="userForm" onsubmit="return submitForm()">
         <label for="ssn">ssn (last 4) xxx-xx-</label>
-        <input type="number" name="ssn" id="ssn" placeholder="1333">
+        <input type="number" name="ssn" id="ssn" placeholder="1333" onkeypress="validateForm()">
         
         <label for="dob">date of birth</label>
-        <input type="date" name="dob" id="dob" placeholder="3/3/2003">
+        <input type="date" name="dob" id="dob" placeholder="3/3/2003" onkeypress="validateForm()">
         
-        <input type="submit" name="submit" id="submit" value="SUBMIT">
+        <input type="submit" name="submitButton" id="submitButton" value="SUBMIT">
       </form>
     </section>
     
