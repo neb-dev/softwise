@@ -50,5 +50,10 @@ table {
 @include respond-to(medium) {}
 @include respond-to(large) {}
 */
+.enable {
+  background-color: green; }
+
+.diable {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

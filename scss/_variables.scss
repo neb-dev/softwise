@@ -1,0 +1,30 @@
+$background: #212121;
+$color: ghostwhite;
+$light: 300;
+$reg: 400;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/*
+@include respond-to(small) {}
+@include respond-to(medium) {}
+@include respond-to(large) {}
+*/
