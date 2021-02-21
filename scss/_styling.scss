@@ -1,7 +1,35 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(230, 230, 230);
+
+  header {
+    height: 100px;
+    background-color: white;
+    margin: auto;
+  }
+
+  main {
+    section {
+      div {
+        h1 {
+          font-weight: 700;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
 .enable {
   background-color: green;
 }
 
 .diable {
   display: none;
+}
+
+@include respond-to(small) {
+}
+@include respond-to(medium) {
+}
+@include respond-to(large) {
 }

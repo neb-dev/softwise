@@ -50,6 +50,17 @@ table {
 @include respond-to(medium) {}
 @include respond-to(large) {}
 */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #e6e6e6; }
+  body header {
+    height: 100px;
+    background-color: white;
+    margin: auto; }
+  body main section div h1 {
+    font-weight: 700;
+    font-size: 32px; }
+
 .enable {
   background-color: green; }
 
