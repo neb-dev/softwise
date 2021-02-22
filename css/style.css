@@ -50,21 +50,45 @@ table {
 @include respond-to(medium) {}
 @include respond-to(large) {}
 */
+html,
+body {
+  height: 100%;
+  overflow: hidden; }
+
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #e6e6e6; }
+  background-color: #f1f2f3;
+  color: #999999; }
+  body header {
+    background-color: white;
+    margin: auto; }
+  body main {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body main section.form-card {
+      height: 500px; }
+      body main section.form-card div.form-header h1 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #4b71b0; }
+
+@media (min-width: 1200px) {
   body header {
     height: 100px;
     background-color: white;
     margin: auto; }
-  body main section div h1 {
-    font-weight: 700;
-    font-size: 32px; }
-
-.enable {
-  background-color: green; }
-
-.diable {
-  display: none; }
+  body main {
+    height: 75vh; }
+    body main section.form-card {
+      width: 75vw;
+      background-color: white;
+      margin: auto; }
+      body main section.form-card div.form-header h1 {
+        font-size: 32px; }
+    body main .enable {
+      background-color: green; }
+    body main .diable {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

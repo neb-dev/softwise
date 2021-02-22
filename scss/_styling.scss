@@ -1,35 +1,67 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(241, 242, 243);
+  color: rgb(153, 153, 153);
 
   header {
-    height: 100px;
     background-color: white;
     margin: auto;
   }
 
   main {
-    section {
-      div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    section.form-card {
+      height: 500px;
+      div.form-header {
         h1 {
           font-weight: 700;
-          font-size: 32px;
+          font-size: 24px;
+          color: rgb(75, 113, 176);
         }
       }
     }
   }
 }
-.enable {
-  background-color: green;
-}
-
-.diable {
-  display: none;
-}
-
 @include respond-to(small) {
 }
 @include respond-to(medium) {
 }
 @include respond-to(large) {
+  body {
+    header {
+      height: 100px;
+      background-color: white;
+      margin: auto;
+    }
+
+    main {
+      height: 75vh;
+
+      section.form-card {
+        width: 75vw;
+        background-color: white;
+        margin: auto;
+        div.form-header {
+          h1 {
+            font-size: 32px;
+          }
+        }
+      }
+      .enable {
+        background-color: green;
+      }
+
+      .diable {
+        display: none;
+      }
+    }
+  }
 }
