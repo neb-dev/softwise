@@ -20,24 +20,27 @@
           <h1>Please enter the following information</h1>
         </div>
         <form id="userForm" onsubmit="return submitForm()">
-          <label for="ssn">ssn (last 4) xxx-xx-</label>
-          <input
-            type="number"
-            name="ssn"
-            id="ssn"
-            placeholder="1333"
-            oninput="validateForm()"
-          />
+          <div class="input-group">
+            <label for="ssn">ssn (last 4) xxx-xx-</label>
+            <input
+              type="number"
+              name="ssn"
+              id="ssn"
+              placeholder="1333"
+              oninput="validateForm()"
+            />
+          </div>
 
-          <label for="dob">date of birth</label>
-          <input
-            type="date"
-            name="dob"
-            id="dob"
-            placeholder="3/3/2003"
-            oninput="validateForm()"
-          />
-
+          <div class="input-group">
+            <label for="dob">date of birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="3/3/2003"
+              oninput="validateForm()"
+            />
+          </div>
           <input
             type="submit"
             name="submitButton"

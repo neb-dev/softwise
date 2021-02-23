@@ -61,17 +61,34 @@ body {
   color: #999999; }
   body header {
     background-color: white;
-    margin: auto; }
+    text-align: center; }
+    body header img {
+      margin: auto; }
   body main {
     display: flex;
     align-items: center;
     justify-content: center; }
     body main section.form-card {
+      box-shadow: 0 5px 7px #DDD;
+      border-radius: 16px;
       height: 500px; }
-      body main section.form-card div.form-header h1 {
-        font-weight: 700;
-        font-size: 24px;
-        color: #4b71b0; }
+      body main section.form-card div.form-header {
+        border-bottom: 0.25px solid #ebebeb;
+        box-shadow: 0 5px 7px #f5f5f5;
+        text-align: center; }
+        body main section.form-card div.form-header h1 {
+          padding: 15px 15px 65px 15px;
+          font-weight: 700;
+          font-size: 24px;
+          color: #4b71b0; }
+      body main section.form-card form {
+        display: flex;
+        flex-direction: column; }
+        body main section.form-card form .input-group {
+          display: block;
+          margin: auto; }
+        body main section.form-card form input[type=submit] {
+          width: 175px; }
 
 @media (min-width: 1200px) {
   body header {
@@ -85,7 +102,7 @@ body {
       background-color: white;
       margin: auto; }
       body main section.form-card div.form-header h1 {
-        font-size: 32px; }
+        font-size: 45px; }
     body main .enable {
       background-color: green; }
     body main .diable {
