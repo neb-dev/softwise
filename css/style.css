@@ -92,7 +92,7 @@ body {
       body main section.form-card form {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         height: 70%; }
         body main section.form-card form .input-group {
@@ -118,8 +118,9 @@ body {
           font-family: 'Raleway', sans-serif;
           font-weight: 700;
           font-size: 24px;
+          margin-top: 40px;
           margin-bottom: 10px;
-          margin-right: 100px;
+          margin-right: 115px;
           align-self: flex-end; }
 
 @media (min-width: 1200px) {
